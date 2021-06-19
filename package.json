@@ -13,7 +13,7 @@
     "postbuild": "cp -av src/* docs && mv docs/styles.css docs/assets/css",
     "build:dev": "tailwindcss build tailwind.css -o src/assets/css/styles.css",
     "live": "live-server ./src --port=8080 --ignore=/assets/css",
-    "dev": "watch 'yarn build:dev' ./src/ --ignoreDirectoryPattern='/assets/css/' & yarn live"
+    "dev": "yarn build:dev watch ./src/ --ignoreDirectoryPattern='/assets/css/' & yarn live"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
